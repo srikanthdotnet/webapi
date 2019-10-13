@@ -1,0 +1,40 @@
+        [HttpGet]
+        [Route("AllEmployeeDetails")]
+        public List<EmployeeDetail> GetEmaployee()
+        {
+            try
+            {
+
+                List<EmployeeDetail> _obj = new List<EmployeeDetail>()
+                {
+                    new EmployeeDetail{EmpId=1,EmpName="a",Gender="male",Address="hyd",DateOfBirth=DateTime.Now,EmailId="a@gmail.com",PinCode="1234"},
+                    new EmployeeDetail{EmpId=1,EmpName="b",Gender="female",Address="hyd1",DateOfBirth=DateTime.Now,EmailId="b@gmail.com",PinCode="1234"}
+                };
+
+                return _obj;
+
+
+
+
+                //return objEntity.EmployeeDetails;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+==================
+  public partial class EmployeeDetail
+    {
+        public int EmpId { get; set; }
+        public string EmpName { get; set; }
+        public Nullable<System.DateTime> DateOfBirth { get; set; }
+        public string EmailId { get; set; }
+        public string Gender { get; set; }
+        public string Address { get; set; }
+        public string PinCode { get; set; }
+    }
+    =============
+    crud operations -in -angular 7 using -webapi   c#corenermithilesh
+    angular 8  with .netcore api crud c#corener--
+    
